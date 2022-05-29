@@ -1,5 +1,5 @@
 {
-  "name": "ec0lint-for-css",
+  "name": "ec0lint-css",
   "version": "14.6.1",
   "description": "CSS linter for reducing digital footprint.",
   "keywords": [
@@ -14,23 +14,23 @@
     "stylelint",
     "sugarss",
     "ec0lint",
-    "ec0lint-for-css"
+    "ec0lint-css"
   ],
   "homepage": "TBD",
-  "repository": "ec0lint/ec0lint-for-css",
+  "repository": "ec0lint/ec0lint-css",
   "license": "MIT",
   "author": "ec0lint",
   "main": "lib/index.js",
-  "types": "types/ec0lint-for-css/index.d.ts",
+  "types": "types/ec0lint-css/index.d.ts",
   "bin": {
-    "stylelint": "bin/ec0lint-for-css.js"
+    "stylelint": "bin/ec0lint-css.js"
   },
   "files": [
     "bin/**/*.js",
     "lib/**/*.js",
     "!**/__tests__/**",
     "!lib/testUtils/**",
-    "types/ec0lint-for-css/index.d.ts"
+    "types/ec0lint-css/index.d.ts"
   ],
   "scripts": {
     "benchmark-rule": "node scripts/benchmark-rule.mjs",
