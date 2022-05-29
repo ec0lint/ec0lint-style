@@ -1,112 +1,20 @@
-# Stylelint
+[![npm version](https://img.shields.io/npm/v/ec0lint.svg)](https://www.npmjs.com/package/ec0lint)
 
-[![npm version](https://img.shields.io/npm/v/stylelint)](https://www.npmjs.com/package/stylelint)
-[![Build Status](https://github.com/stylelint/stylelint/workflows/Testing/badge.svg)](https://github.com/stylelint/stylelint/actions/workflows/testing.yml?query=branch%3Amain)
-[![npm downloads](https://img.shields.io/npm/dm/stylelint)](https://npmcharts.com/compare/stylelint?minimal=true)
+# ec0lint-for-css
 
-A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+[Configuring](https://eslint.org/docs/user-guide/configuring) |
+[Rules](https://eslint.org/docs/rules/)
 
-## Features
+ec0lint-for-css is a static code analysis tool that provides the users with useful hints on how to reduce the digital footprint of their webpages during the development process. Applying code changes suggested by ec0lint will make result with webpages that emit less carbon per visit, load quicker and are more space- efficient. The tool is open-source and community-driven.
 
-It's mighty as it:
+## Our goal
 
-- has over **170 built-in rules** for modern CSS syntax and features
-- supports **plugins** so you can create your own rules
-- automatically **fixes problems** where possible
-- is **well tested** with over 15000 unit tests
-- supports **shareable configs** that you can extend or create
-- is **unopinionated** so that you can customize it to your exact needs
-- **complements pretty printers** like Prettier
-- has a **growing community** and is used by Google, GitHub and WordPress
+An average webpage with 10 000 views monthly emits 4.6 g CO2 with every view. It sums up to 553 kg annually. Thanks to following good practices such as [Sustainable Web Design](https://sustainablewebdesign.org/) and code optimization the emissions may be reduced from 4.6 g to 0.2 g emitting only 24 kg CO2 annually. It means that 529 kg (96%!) CO2 could be saved, which is as much as charging 65 000 smartphones.
 
-And can be extended to:
+ec0lint is a tool that can help with that. By static code analysis, it provides improvements to the code and highlights the impact it will have on carbon emissions, loading speed and size. Those improvements can range from decreasing the size and number of images, videos or animations, including a lighter library or an open-source library, changing the font type, font size or background colors.
 
-- parse **CSS-like syntaxes** like SCSS, Sass, Less and SugarSS
-- extract **embedded styles** from HTML, Markdown and CSS-in-JS object & template literals
+The tool is customized and each rule applied during the analysis can be adjusted, or treated as hints rather than errors. This flexibility allows the developers to reach their goals without interruptions from ec0lint, at the same time drawing attention to possible improvements.
 
-## How it'll help you
+Thank you!
 
-It'll help you **avoid errors**, for example styles that are:
-
-- invalid, e.g. malformed hex colors and named grid areas
-- valid but with unintended consequences, e.g. duplicated selectors and overridden properties
-
-And **enforce conventions**, for example:
-
-- what units, functions, at-rules etc are allowed
-- consistent patterns for selector names, at-rule names, custom properties etc
-- maximum specificity or maximum quantity of each selector type
-- your preferred notation for color functions, font weight etc
-
-There are also rules for enforcing stylistic consistency, but we now recommend you use Stylelint alongside a pretty printer like Prettier. Linters and pretty printers are complementary tools that work together.
-
-## Example output
-
-![Example](example.png)
-
-## Guides
-
-- User guide
-  - [Getting started](docs/user-guide/get-started.md)
-  - [Configuration](docs/user-guide/configure.md)
-  - Rules
-    - [List of rules](docs/user-guide/rules/list.md)
-    - [About rules](docs/user-guide/rules/about.md)
-    - [Combining rules](docs/user-guide/rules/combine.md)
-    - [Using regex in rules](docs/user-guide/rules/regex.md)
-  - Usage
-    - [CLI](docs/user-guide/usage/cli.md)
-    - [Node.js API](docs/user-guide/usage/node-api.md)
-    - [PostCSS plugin](docs/user-guide/usage/postcss-plugin.md)
-    - [Shared options](docs/user-guide/usage/options.md)
-  - Integrations
-    - [Editor integrations](docs/user-guide/integrations/editor.md)
-    - [Task runner integrations](docs/user-guide/integrations/task-runner.md)
-    - [Other integrations](docs/user-guide/integrations/other.md)
-  - [Ignoring code](docs/user-guide/ignore-code.md)
-  - [Errors & warnings](docs/user-guide/errors.md)
-- Developer guide
-  - [Working on rules](docs/developer-guide/rules.md)
-  - [Writing plugins](docs/developer-guide/plugins.md)
-  - [Writing custom syntaxes](docs/developer-guide/syntaxes.md)
-  - [Writing custom formatters](docs/developer-guide/formatters.md)
-  - [Writing system tests](docs/developer-guide/system-tests.md)
-  - [Writing processors](docs/developer-guide/processors.md)
-- Migration guide
-  - [Migrating to 14.0.0](docs/migration-guide/to-14.md)
-- Maintainer guide
-  - [Managing issues](docs/maintainer-guide/issues.md)
-  - [Managing pull requests](docs/maintainer-guide/pull-requests.md)
-  - [Performing releases](docs/maintainer-guide/releases.md)
-- About
-  - [Vision](docs/about/vision.md)
-  - [Linting](docs/about/linting.md)
-  - [Semantic versioning](docs/about/semantic-versioning.md)
-
-## Contributors
-
-Stylelint is maintained by volunteers. Without the code contributions from [all these fantastic people](https://github.com/stylelint/stylelint/graphs/contributors), Stylelint would not exist. [Become a contributor](CONTRIBUTING.md).
-
-### Sponsors
-
-<object data="https://opencollective.com/stylelint/sponsors.svg?width=420&button=false" type="image/svg+xml">
-  <img src="https://opencollective.com/stylelint/sponsors.svg?width=840&button=false" />
-</object>
-
-Thank you to all our sponsors! [Become a sponsor](https://opencollective.com/stylelint).
-
-### Backers
-
-<object data="https://opencollective.com/stylelint/backers.svg?width=420&avatarHeight=48&button=false" type="image/svg+xml">
-  <img src="https://opencollective.com/stylelint/backers.svg?width=840&avatarHeight=48&button=false" />
-</object>
-
-Thank you to all our backers! [Become a backer](https://opencollective.com/stylelint).
-
-### Website hosting
-
-[![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
-
-## License
-
-[The MIT License](https://raw.githubusercontent.com/stylelint/stylelint/main/LICENSE).
+We are open to collaboration on improving ec0lint, and we are very grateful for all contributions and feedback on the tool. Thank you for helping us make the web greener!

@@ -1,7 +1,7 @@
 {
-  "name": "stylelint",
+  "name": "ec0lint-for-css",
   "version": "14.6.1",
-  "description": "A mighty, modern CSS linter.",
+  "description": "CSS linter for reducing digital footprint.",
   "keywords": [
     "css-in-js",
     "css",
@@ -12,27 +12,25 @@
     "sass",
     "scss",
     "stylelint",
-    "sugarss"
+    "sugarss",
+    "ec0lint",
+    "ec0lint-for-css"
   ],
-  "homepage": "https://stylelint.io",
-  "repository": "stylelint/stylelint",
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/stylelint"
-  },
+  "homepage": "TBD",
+  "repository": "ec0lint/ec0lint-for-css",
   "license": "MIT",
-  "author": "stylelint",
+  "author": "ec0lint",
   "main": "lib/index.js",
-  "types": "types/stylelint/index.d.ts",
+  "types": "types/ec0lint-for-css/index.d.ts",
   "bin": {
-    "stylelint": "bin/stylelint.js"
+    "stylelint": "bin/ec0lint-for-css.js"
   },
   "files": [
     "bin/**/*.js",
     "lib/**/*.js",
     "!**/__tests__/**",
     "!lib/testUtils/**",
-    "types/stylelint/index.d.ts"
+    "types/ec0lint-for-css/index.d.ts"
   ],
   "scripts": {
     "benchmark-rule": "node scripts/benchmark-rule.mjs",
