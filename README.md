@@ -1,11 +1,11 @@
 [![npm version](https://img.shields.io/npm/v/ec0lint.svg)](https://www.npmjs.com/package/ec0lint)
 
-# ec0lint-for-css
+# ec0lint-css
 
 [Configuring](https://eslint.org/docs/user-guide/configuring) |
 [Rules](https://eslint.org/docs/rules/)
 
-ec0lint-for-css is a static code analysis tool that provides the users with useful hints on how to reduce the digital footprint of their webpages during the development process. Applying code changes suggested by ec0lint will make result with webpages that emit less carbon per visit, load quicker and are more space- efficient. The tool is open-source and community-driven.
+ec0lint-css is a static code analysis tool that provides the users with useful hints on how to reduce the digital footprint of their webpages during the development process. Applying code changes suggested by ec0lint will make result with webpages that emit less carbon per visit, load quicker and are more space- efficient. The tool is open-source and community-driven.
 
 ## Our goal
 
