@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 'use strict';
 
 // to use V8's code cache to speed up instantiation time
