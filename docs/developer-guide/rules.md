@@ -6,7 +6,7 @@ Please help us create, enhance, and debug our rules!
 
 You should:
 
-1. Get yourself ready to [contribute code](../../CONTRIBUTING.md#code-contributions).
+1. Get yourself ready to contribute code.
 2. Familiarize yourself with the [conventions and patterns](../user-guide/rules/about.md) for rules.
 
 ### Write the rule
@@ -171,7 +171,7 @@ The final step is to add references to the new rule in the following places:
 
 You should:
 
-1. Get ready to [contribute code](../../CONTRIBUTING.md#code-contributions).
+1. Get ready to contribute code.
 2. Change the rule's validation to allow for the new option.
 3. Add new unit tests to test the option.
 4. Add (as little as possible) logic to the rule to make the tests pass.
@@ -181,7 +181,7 @@ You should:
 
 You should:
 
-1. Get ready to [contribute code](../../CONTRIBUTING.md#code-contributions).
+1. Get ready to contribute code.
 2. Write failing unit tests that exemplify the bug.
 3. Fiddle with the rule until those new tests pass.
 
