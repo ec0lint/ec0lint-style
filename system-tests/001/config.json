@@ -1,5 +1,5 @@
 {
 	"rules": {
-		"no-ttf-font-files": "always"
+		"no-ttf-font-files": true
 	}
 }
