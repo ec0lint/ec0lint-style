@@ -35,6 +35,16 @@ The following patterns are _not_ considered problems:
 
 <!-- prettier-ignore -->
 ```css
+background-image: url('image.svg')
+```
+
+<!-- prettier-ignore -->
+```css
+background-image: url('image.webp')
+```
+
+<!-- prettier-ignore -->
+```css
 background-image: url('image.gif')
 ```
 
