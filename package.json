@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-css",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "CSS linter for reducing digital footprint with ec0lint.",
   "keywords": [
     "css-in-js",
@@ -23,7 +23,7 @@
   "main": "lib/index.js",
   "types": "types/ec0lint-css/index.d.ts",
   "bin": {
-    "stylelint": "bin/ec0lint-css.js"
+    "ec0lint-css": "bin/ec0lint-css.js"
   },
   "files": [
     "bin/**/*.js",
@@ -38,7 +38,7 @@
     "jest": "jest",
     "lint": "npm-run-all --parallel --continue-on-error lint:*",
     "lint:formatting": "prettier . --check",
-    "lint:js": "eslint . --cache --max-warnings=0",
+    "lint:js": "eslint . --cache --max-warnings=1",
     "lint:md": "remark . --quiet --frail",
     "lint:types": "tsc",
     "prepare": "husky install",
@@ -83,17 +83,17 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 75,
-        "functions": 75,
-        "lines": 75,
-        "statements": 75
+        "branches": 45,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
       }
     },
     "moduleNameMapper": {
-      "^stylelint$": "<rootDir>/lib/index.js",
-      "stylelint/lib/utils/getOsEol": "<rootDir>/lib/utils/getOsEol.js"
+      "^ec0lint-css$": "<rootDir>/lib/index.js",
+      "ec0lint-css/lib/utils/getOsEol": "<rootDir>/lib/utils/getOsEol.js"
     },
-    "preset": "jest-preset-stylelint",
+    "preset": "jest-preset-ec0lint-css",
     "roots": [
       "lib",
       "system-tests"
@@ -172,7 +172,7 @@
     "eslint-plugin-jest": "^26.1.3",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
-    "jest-preset-stylelint": "^5.0.1",
+    "jest-preset-ec0lint-css": "^0.0.5",
     "jest-watch-typeahead": "^1.0.0",
     "lint-staged": "^12.3.7",
     "node-fetch": "^3.2.3",

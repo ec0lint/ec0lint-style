@@ -13,8 +13,8 @@ import type {
 	LinterResult,
 	Plugin,
 	Warning,
-} from 'stylelint';
-import stylelint from 'stylelint';
+} from 'ec0lint-css';
+import ec0lintCss from 'ec0lint-css';
 
 const options: Partial<LinterOptions> = {
 	allowEmptyInput: true,
@@ -25,7 +25,7 @@ const options: Partial<LinterOptions> = {
 		cwd: './',
 	},
 	cache: true,
-	cacheLocation: './stylelint.cache.json',
+	cacheLocation: './ec0lintCss.cache.json',
 	ignoreDisables: true,
 	reportDescriptionlessDisables: true,
 	reportInvalidScopeDisables: true,
@@ -43,7 +43,7 @@ const options: Partial<LinterOptions> = {
 	},
 };
 
-stylelint.lint(options).then((x: LinterResult) => {
+ec0lintCss.lint(options).then((x: LinterResult) => {
 	const err: boolean = x.errored;
 	const output: string = x.output;
 	const results: LintResult[] = x.results;
@@ -52,33 +52,33 @@ stylelint.lint(options).then((x: LinterResult) => {
 	}
 });
 
-stylelint.resolveConfig('path').then((config) => stylelint.lint({ config }));
+ec0lintCss.resolveConfig('path').then((config) => ec0lintCss.lint({ config }));
 
-stylelint.resolveConfig('path', { config: options }).then((config) => stylelint.lint({ config }));
+ec0lintCss.resolveConfig('path', { config: options }).then((config) => ec0lintCss.lint({ config }));
 
-stylelint
+ec0lintCss
 	.resolveConfig('path', { configBasedir: 'path' })
-	.then((config) => stylelint.lint({ config }));
+	.then((config) => ec0lintCss.lint({ config }));
 
-stylelint
+ec0lintCss
 	.resolveConfig('path', { configFile: 'path' })
-	.then((config) => stylelint.lint({ config }));
+	.then((config) => ec0lintCss.lint({ config }));
 
-stylelint.resolveConfig('path', { cwd: 'path' }).then((config) => stylelint.lint({ config }));
+ec0lintCss.resolveConfig('path', { cwd: 'path' }).then((config) => ec0lintCss.lint({ config }));
 
-stylelint
+ec0lintCss
 	.resolveConfig('path', {
 		config: options,
 		configBasedir: 'path',
 		configFile: 'path',
 		cwd: 'path',
 	})
-	.then((config) => stylelint.lint({ config }));
+	.then((config) => ec0lintCss.lint({ config }));
 
 const formatter: FormatterType = 'json';
 
 const ruleName = 'sample-rule';
-const messages = stylelint.utils.ruleMessages(ruleName, {
+const messages = ec0lintCss.utils.ruleMessages(ruleName, {
 	problem: 'This a rule problem message',
 	warning: (reason) => `This is not allowed because ${reason}`,
 });
@@ -87,19 +87,19 @@ const problemFunc: (...reason: string[]) => string = messages.warning;
 
 const testPlugin: Plugin = (options) => {
 	return (root, result) => {
-		const validOptions = stylelint.utils.validateOptions(result, ruleName, { actual: options });
+		const validOptions = ec0lintCss.utils.validateOptions(result, ruleName, { actual: options });
 		if (!validOptions) {
 			return;
 		}
 
-		stylelint.utils.checkAgainstRule(
+		ec0lintCss.utils.checkAgainstRule(
 			{
 				ruleName: 'at-rule-empty-line-before',
 				ruleSettings: ['always'],
 				root,
 			},
 			(warning) => {
-				stylelint.utils.report({
+				ec0lintCss.utils.report({
 					ruleName,
 					result,
 					message: messages.warning(warning.text),
@@ -113,4 +113,4 @@ const testPlugin: Plugin = (options) => {
 	};
 };
 
-stylelint.createPlugin(ruleName, testPlugin);
+ec0lintCss.createPlugin(ruleName, testPlugin);

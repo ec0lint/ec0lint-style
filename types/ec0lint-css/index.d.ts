@@ -1,9 +1,9 @@
-declare module 'stylelint' {
+declare module 'ec0lint-css' {
 	import type * as PostCSS from 'postcss';
 	import type { GlobbyOptions } from 'globby';
 	import type { cosmiconfig } from 'cosmiconfig';
 
-	namespace stylelint {
+	namespace ec0lintCss {
 		export type Severity = 'warning' | 'error';
 
 		export type ConfigExtends = string | string[];
@@ -122,7 +122,7 @@ declare module 'stylelint' {
 		};
 
 		export type PostcssResult = (PostCSS.Result | EmptyResult) & {
-			stylelint: StylelintPostcssResult;
+			ec0lintCss: StylelintPostcssResult;
 			warn(message: string, options?: WarningOptions): void;
 		};
 
@@ -342,7 +342,7 @@ declare module 'stylelint' {
 			resolveConfig: (
 				filePath: string,
 				options?: Pick<LinterOptions, 'cwd' | 'config' | 'configBasedir' | 'configFile'>,
-			) => Promise<stylelint.Config | undefined>;
+			) => Promise<ec0lintCss.Config | undefined>;
 			utils: {
 				/**
 				 * Report a problem.
@@ -414,7 +414,7 @@ declare module 'stylelint' {
 		export type PostcssPluginOptions = Omit<LinterOptions, 'syntax' | 'customSyntax'> | Config;
 	}
 
-	const stylelint: stylelint.PublicApi;
+	const ec0lintCss: ec0lintCss.PublicApi;
 
-	export = stylelint;
+	export = ec0lintCss;
 }
