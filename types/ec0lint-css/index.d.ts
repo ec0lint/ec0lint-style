@@ -1,4 +1,4 @@
-declare module 'stylelint' {
+declare module 'ec0lint-css' {
 	import type * as PostCSS from 'postcss';
 	import type { GlobbyOptions } from 'globby';
 	import type { cosmiconfig } from 'cosmiconfig';

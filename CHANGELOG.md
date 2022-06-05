@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+export ec0lint-css module
+
 ## 0.0.2
 
 Add jest-preset-ec0lint-css
