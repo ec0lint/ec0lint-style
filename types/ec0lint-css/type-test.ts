@@ -13,8 +13,8 @@ import type {
 	LinterResult,
 	Plugin,
 	Warning,
-} from 'stylelint';
-import stylelint from 'stylelint';
+} from 'ec0lint-css';
+import stylelint from 'ec0lint-css';
 
 const options: Partial<LinterOptions> = {
 	allowEmptyInput: true,
