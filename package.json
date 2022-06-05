@@ -38,7 +38,7 @@
     "jest": "jest",
     "lint": "npm-run-all --parallel --continue-on-error lint:*",
     "lint:formatting": "prettier . --check",
-    "lint:js": "eslint . --cache --max-warnings=0",
+    "lint:js": "eslint . --cache --max-warnings=1",
     "lint:md": "remark . --quiet --frail",
     "lint:types": "tsc",
     "prepare": "husky install",
