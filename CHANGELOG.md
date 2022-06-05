@@ -1,8 +1,12 @@
 # Changelog
 
+## 0.0.5 - 0.0.7
+
+Fix all issues
+
 ## 0.0.3 + 0.0.4
 
-export ec0lint-css module
+Export ec0lint-css module
 
 ## 0.0.2
 
