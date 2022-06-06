@@ -4,7 +4,11 @@
 
 First release - MVP - 2 rules: image formats, font formats
 
-## 0.0.5 - 0.0.7
+## 0.0.10
+
+Mock release for jest-preset-ec0lint-css
+
+## 0.0.5 - 0.0.9
 
 Fix all issues
 
