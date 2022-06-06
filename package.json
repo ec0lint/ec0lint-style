@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-css",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "CSS linter for reducing digital footprint with ec0lint.",
   "keywords": [
     "css-in-js",
@@ -16,7 +16,7 @@
     "ec0lint",
     "ec0lint-css"
   ],
-  "homepage": "TBD",
+  "homepage": "www.ec0lint.com",
   "repository": "ec0lint/ec0lint-css",
   "license": "MIT",
   "author": "ec0lint",
