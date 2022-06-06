@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+First release - MVP - 2 rules: image formats, font formats
+
 ## 0.0.5 - 0.0.7
 
 Fix all issues
