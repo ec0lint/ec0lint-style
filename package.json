@@ -28,6 +28,7 @@
   "files": [
     "bin/**/*.js",
     "lib/**/*.js",
+    "scripts/**/*.js",
     "!**/__tests__/**",
     "!lib/testUtils/**",
     "types/ec0lint-css/index.d.ts"
