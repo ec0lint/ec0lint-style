@@ -10,9 +10,9 @@ Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG forma
 
 The table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats.
 
-![alt text](https://github.com/ec0lint/ec0lint-css/blob/main/exemplary_image.jpg)
+![alt text](https://github.com/ec0lint/ec0lint-css/blob/main/exemplary_image.webp)
 
-![alt text](https://github.com/ec0lint/ec0lint-css/blob/main/image_table.jpg)
+![alt text](https://github.com/ec0lint/ec0lint-css/blob/main/image_table.webp)
 
 By multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (16.89 Mb) – sums up to 6.05 g. The same image in SVG format (1.01 Mb) generates 0.26g CO2. So, by substracting 0.26 g from 6.05 g we get 5.79g. (95% less CO2).
 
