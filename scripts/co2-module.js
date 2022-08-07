@@ -15,7 +15,7 @@ function calculateCO2Emission(filesize) {
 function calculateCO2FontFilesReduction(path) {
 	const fileSize = getFileSize(path);
 	const emission = calculateCO2Emission(fileSize);
-	const toLowerPath = path.toLower();
+	const toLowerPath = path.toLowerCase();
 
 	if (toLowerPath.includes('helvetica')) {
 		return emission * 0.61;
@@ -63,7 +63,7 @@ function calculateCO2FontFilesReduction(path) {
 function calculateCO2ImageFilesReduction(path) {
 	const fileSize = getFileSize(path);
 	const emission = calculateCO2Emission(fileSize);
-	const toLowerPath = path.toLower();
+	const toLowerPath = path.toLowerCase();
 
 	if (toLowerPath.includes('.png')) {
 		return emission * 0.94;
