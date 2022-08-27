@@ -10,7 +10,7 @@ Convertion of only one of the most popular fonts used on websites – Helvetica 
 
 In the table below we show carbon footprint emission depending on file format for 10 popular fonts used on websites.
 
-![alt text](https://github.com/ec0lint/ec0lint-css/blob/main/font_table.webp)
+![alt text](https://github.com/ec0lint/ec0lint-style/blob/main/font_table.webp)
 
 By multiplying the library size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh , the carbon footprint of the TTF file (2.49 Mb for Helvetica Neue) – sums up to 0.89 g. For WOFF2 (0.99 Mb) the carbon footprint amounts to 0.35g and for WOFF (1.51MB) to 0.54g. So, by substracting 0.35 g and 0.54g from 0.89 g we get respectively 0.54 g (61% less CO2) and 0.35g (39% less CO2).
 

@@ -4,7 +4,7 @@ A formatter is a function with the following signature:
 
 ```js
 /**
- * @type {import('ec0lint-css').Formatter}
+ * @type {import('ec0lint-style').Formatter}
  */
 function formatter(results, returnValue) {
   return "a string of formatted results";
