@@ -1,11 +1,11 @@
-[![npm version](https://img.shields.io/npm/v/ec0lint.svg)](https://www.npmjs.com/package/ec0lint)
+[![npm version](https://img.shields.io/npm/v/ec0lint-style.svg)](https://www.npmjs.com/package/ec0lint-style)
 
-# ec0lint-css
+# ec0lint-style
 
 [Configuring](https://stylelint.io/user-guide/configure) |
 [Rules](http://ec0lint.com/features)
 
-ec0lint-css is a static code analysis tool that provides the users with useful hints on how to reduce the digital footprint of their webpages during the development process. Applying code changes suggested by ec0lint will make result with webpages that emit less carbon per visit, load quicker and are more space-efficient. The tool is open-source and community-driven.
+ec0lint-style is a static code analysis tool that provides the users with useful hints on how to reduce the digital footprint of their webpages during the development process. Applying code changes suggested by ec0lint will make result with webpages that emit less carbon per visit, load quicker and are more space-efficient. The tool is open-source and community-driven.
 
 ## Our goal
 
