@@ -2,9 +2,9 @@
 
 [![npm version](https://img.shields.io/npm/v/ec0lint-style.svg)](https://www.npmjs.com/package/ec0lint-style)
 [![Downloads](https://img.shields.io/npm/dm/ec0lint-style.svg)](https://www.npmjs.com/package/ec0lint-style)
-[![Build Status](https://github.com/ec0lint/ec0lint-style/workflows/CI/badge.svg)](https://github.com/ec0lint/ec0lint-style/actions)
+[![Build Status](https://github.com/ec0lint/ec0lint/workflows/CI/badge.svg)](https://github.com/ec0lint/ec0lint/actions)
 [![Open Collective Sponsors](https://img.shields.io/opencollective/sponsors/ec0lint)](https://opencollective.com/ec0lint)
-[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/company/ec0lint/)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-ec0lint-blue)](https://www.linkedin.com/company/ec0lint/)
 
 [Website](http://ec0lint.com) |
 [Configuring](https://stylelint.io/user-guide/configure/) |
