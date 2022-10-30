@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-style",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "CSS linter for reducing digital footprint with ec0lint.",
   "keywords": [
     "css-in-js",
@@ -173,7 +173,7 @@
     "eslint-plugin-jest": "^26.1.3",
     "husky": "^8.0.1",
     "jest": "^28.1.3",
-    "jest-preset-ec0lint-style": "^1.0.2",
+    "jest-preset-ec0lint-style": "^2.0.0",
     "jest-watch-typeahead": "^2.0.0",
     "lint-staged": "^13.0.3",
     "node-fetch": "^3.2.3",
