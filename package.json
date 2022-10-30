@@ -1,6 +1,6 @@
 {
   "name": "ec0lint-style",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "CSS linter for reducing digital footprint with ec0lint.",
   "keywords": [
     "css-in-js",
