@@ -13,7 +13,7 @@ The table below shows comparison between file sizes and CO2 emission for exempla
 ![alt text](https://github.com/ec0lint/ec0lint-style/blob/main/exemplary_image.webp)
 
 | File format | File size | CO2 emission |
-|-------------|-----------|--------------|
+| ----------- | --------- | ------------ |
 | SVG         | 126 kB    | 0.04 g       |
 | WebP        | 200 kB    | 0.07 g       |
 | AVIF        | 231 kB    | 0.08 g       |
