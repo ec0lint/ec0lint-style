@@ -12,7 +12,17 @@ The table below shows comparison between file sizes and CO2 emission for exempla
 
 ![alt text](https://github.com/ec0lint/ec0lint-style/blob/main/exemplary_image.webp)
 
-![alt text](https://github.com/ec0lint/ec0lint-style/blob/main/image_table.webp)
+| File format | File size | CO2 emission |
+| ----------- | --------- | ------------ |
+| SVG         | 126 kB    | 0.04 g       |
+| WebP        | 200 kB    | 0.07 g       |
+| AVIF        | 231 kB    | 0.08 g       |
+| JPG         | 503 kB    | 0.18 g       |
+| GIF         | 913 kB    | 0.33 g       |
+| PNG         | 2 111 kB  | 0.76 g       |
+| TIFF        | 6 329 kB  | 2.27 g       |
+| PSD         | 12 657 kB | 4.53 g       |
+| PS          | 12 825 kB | 4.59 g       |
 
 By multiplying the file size by the end-user traffic (0.81 kWh / 1000 Mb) and by the energy emissions (442 g/kWh), the carbon footprint of the exemplary PNG file (2.1 MB) – sums up to 0.76 g. The same image in SVG format (126 kB) generates 0.04g CO2. So, by substracting 0.04 g from 0.76 g we get 0.72g of savings. (95% less CO2).
 
