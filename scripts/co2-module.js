@@ -80,6 +80,9 @@ function calculateCO2ImageFilesReduction(path) {
 	if (toLowerPath.includes('.psd')) {
 		return emission * 0.99;
 	}
+	if (toLowerPath.includes('.gif')) {
+		return emission * 0.88;
+	}
 
 	if (toLowerPath.includes('.ps')) {
 		return emission * 0.99;
