@@ -1,4 +1,4 @@
-# lighter-image-files
+# lighter-image-formats
 
 Encourages to use WebP and SVG format of image files in CSS code.
 
@@ -10,7 +10,7 @@ Convertion of an exemplary image in 1800 x 1200 resolution from PNG to SVG forma
 
 The table below shows comparison between file sizes and CO2 emission for exemplary image (displayed below) in 1800 x 1200 resolution for the most popular image formats.
 
-![alt text](https://raw.githubusercontent.com/ec0lint/ec0lint/lighter-image-files/docs/exemplary_image.webp)
+![alt text](https://raw.githubusercontent.com/ec0lint/ec0lint/lighter-image-formats/docs/exemplary_image.webp)
 
 | File format | File size | CO2 emission |
 | ----------- | --------- | ------------ |

@@ -1,7 +1,7 @@
 {
 	"rules": {
 		"no-ttf-font-files": true,
-		"lighter-image-files": true,
+		"lighter-image-formats": true,
 		"require-font-display": true
 	}
 }
