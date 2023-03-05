@@ -5,7 +5,7 @@ function getFileSize(path) {
 	const fileSizeInBytes = stats.size;
 	//Convert the file size to megabytes
 
-	return fileSizeInBytes / 1073741824.0;
+	return fileSizeInBytes / (1024 * 1024 * 1024);
 }
 
 function calculateCO2Emission(filesize) {
