@@ -2,7 +2,10 @@
 
 Encourages users to use energy-efficient colors to reduce the power consumption on OLED displays.
 
-Rule efficient-background-color checks background-color CSS property and, based on particular components of color’s RGB format, decides if the level of energy consumption is not too high. The boundaries of RGB components values are red – 204, green – 204 and blue – 153.
+Rule efficient-background-color checks background-color CSS property and, based on particular components of color’s RGB format, decides if the level of energy consumption is not too high. The boundaries of RGB components values are red – 204, green – 204 and blue – 153, as shown in Figure 1.
+
+![rgb-consumption](https://github.com/ec0lint/ec0lint-style/blob/main/rgb_consumption.png)
+_Figure 1 - The recommended colors are inside the marked hexagon._
 
 How OLED displays work
 
@@ -14,8 +17,8 @@ Packages: ec0lint-style
 
 According to https://ieeexplore.ieee.org/abstract/document/5989813 we can calculate the power consumption of OLED displays as a sum of power consumption of each RGB color of a pixel. Figure 1 shows the energy consumption of three RGB colors of different intensities on a μOLED-32028-P1 AMOLED display. Research: https://ieeexplore.ieee.org/abstract/document/5989813
 
-![rgb-consumption](https://github.com/ec0lint/ec0lint-style/blob/main/rgb_consumption.png)
-_Figure 1 - Power consumption for the R, G, and B components of a pixel of OLED screen with different intensity levels_
+![rgb-consumption](https://github.com/ec0lint/ec0lint-style/blob/main/rgb_cube.png)
+_Figure 2 - Power consumption for the R, G, and B components of a pixel of OLED screen with different intensity levels_
 
 Based on the above figure we can see that the most power-consuming color is blue – this is why we decided to set in ec0lint a lower boundary value for blue color than for other two.
 
