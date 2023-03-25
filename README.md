@@ -115,7 +115,7 @@ Let's build an eco-friendly website!
 
 - :four_leaf_clover: VSCode plugin
 - :four_leaf_clover: IntelliJ plugin
-- :hammer: Colors validation (background-color-validation, ec0lint-style)
+- :hammer: Colors validation (efficient-background-color, ec0lint-style)
 - :four_leaf_clover: Image size (image-size-validation, ec0lint)
 - :four_leaf_clover: Video size (video-size-validation, ec0lint)
 - :four_leaf_clover: Images number (image-number-validation, ec0lint)
