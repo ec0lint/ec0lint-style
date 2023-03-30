@@ -12,11 +12,12 @@ function getFileSize(path) {
 	}
 
 	//Convert the file size to megabytes
-	return fileSizeInBytes / 1000000.0;
+
+	return fileSizeInBytes / (1024 * 1024 * 1024);
 }
 
 function calculateCO2Emission(filesize) {
-	return filesize * 442 * 0.00081;
+	return filesize * 442 * 0.81;
 }
 
 function calculateCO2FontFilesReduction(path) {
@@ -86,6 +87,10 @@ function calculateCO2ImageFilesReduction(path) {
 
 	if (toLowerPath.includes('.psd')) {
 		return emission * 0.99;
+	}
+
+	if (toLowerPath.includes('.gif')) {
+		return emission * 0.88;
 	}
 
 	if (toLowerPath.includes('.ps')) {
