@@ -1,8 +1,16 @@
 const fs = require('fs'); //Load the filesystem module
 
 function getFileSize(path) {
-	const stats = fs.statSync(path);
-	const fileSizeInBytes = stats.size;
+	let fileSizeInBytes;
+
+	try {
+		const stats = fs.statSync(path);
+
+		fileSizeInBytes = stats.size;
+	} catch (e) {
+		fileSizeInBytes = 0;
+	}
+
 	//Convert the file size to megabytes
 
 	return fileSizeInBytes / (1024 * 1024 * 1024);
