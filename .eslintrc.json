@@ -1,0 +1,21 @@
+{
+	"env": {
+		"node": true,
+		"es2021": true
+	},
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"rules": {
+		"no-undef": "off",
+		"no-control-regex": "warn"
+	},
+	"extends": ["stylelint"],
+	"globals": {
+		"__dirname": true,
+		"module": true,
+		"require": true,
+		"testRule": true
+	},
+	"root": true
+}

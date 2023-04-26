@@ -53,18 +53,6 @@
     "*.{js,json,md,ts,yml}": "prettier --write"
   },
   "prettier": "@stylelint/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "stylelint"
-    ],
-    "globals": {
-      "__dirname": true,
-      "module": true,
-      "require": true,
-      "testRule": true
-    },
-    "root": true
-  },
   "remarkConfig": {
     "plugins": [
       "@stylelint/remark-preset"
@@ -168,7 +156,7 @@
     "benchmark": "^2.1.4",
     "common-tags": "^1.8.2",
     "deepmerge": "^4.2.2",
-    "eslint": "^8.21.0",
+    "eslint": "^8.39.0",
     "eslint-config-stylelint": "^15.0.0",
     "eslint-plugin-jest": "^27.1.4",
     "husky": "^8.0.1",
