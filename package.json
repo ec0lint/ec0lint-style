@@ -41,7 +41,6 @@
     "lint:formatting": "prettier . --check",
     "lint:js": "eslint . --cache --max-warnings=1",
     "lint:md": "remark . --quiet --frail",
-    "lint:types": "tsc",
     "prepare": "husky install",
     "release": "np",
     "pretest": "npm run lint",
