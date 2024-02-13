@@ -23,7 +23,6 @@ The table below shows comparison between file sizes and CO2 emission for exempla
 | PPM         | 6328 KB   | 2.16 g       |
 | TIFF        | 6328 KB   | 2.16 g       |
 | PSD         | 12698 KB  | 4.33 g       |
-| PS          | 13312 KB  | 4.55 g       |
 
 By multiplying the file size by the end-user traffic (0.81 kWh / GB) and by the energy emissions (442 g / kWh), the carbon footprint of the exemplary PNG file (2.1 MB) – sums up to 0.76 g. The same image in SVG format (126 kB) generates 0.04g CO2. So, by subtracting 0.04 g from 0.76 g we get 0.72g of savings. (95% less CO2).
 
