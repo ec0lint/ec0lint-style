@@ -73,15 +73,11 @@ function calculateCO2ImageFilesReduction(path) {
 	const emission = calculateCO2Emission(fileSize);
 	const toLowerPath = path.toLowerCase();
 
-	if (toLowerPath.includes('.png')) {
+	if (toLowerPath.includes('.png') || toLowerPath.includes('.apng')) {
 		return emission * 0.94;
 	}
 
 	if (toLowerPath.includes('.tiff')) {
-		return emission * 0.98;
-	}
-
-	if (toLowerPath.includes('.tif')) {
 		return emission * 0.98;
 	}
 
@@ -91,10 +87,6 @@ function calculateCO2ImageFilesReduction(path) {
 
 	if (toLowerPath.includes('.gif')) {
 		return emission * 0.88;
-	}
-
-	if (toLowerPath.includes('.ps')) {
-		return emission * 0.99;
 	}
 
 	return emission * 0.97;
